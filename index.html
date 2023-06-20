@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Java Documentation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+    <nav id="navbar">
+        <header class="top">Java Documentation</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Java_vs._JavaScript">Java vs. JavaScript</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Opening_Lines">Opening Lines</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Basic_Variables">Basic Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Declaring_Variables_and_Data_Types">Declaring Variables and Data Types</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#If_Else_statements">If Else Statements</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#While_Statements">While Statements</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#For_Statements">For Statements</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Methods">Methods</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Java is a versatile and widely-used programming language renowned for its simplicity, portability, and object-oriented approach. Developed by James Gosling and his team at Sun Microsystems (now owned by Oracle Corporation), Java was first released in 1995 and has since become one of the most popular programming languages in the world.
+
+                    One of the key strengths of Java lies in its "write once, run anywhere" principle, which enables developers to create applications that can run on any platform with a Java Virtual Machine (JVM). This platform independence is achieved by compiling Java code into bytecode, which can be executed on different operating systems without the need for recompilation.</p>            
+            </article>
+        </section>
+        <section class="main-section" id="Java_vs._JavaScript">
+            <header>Java vs. JavaScript</header>
+            <article>
+                <p>Java is a general-purpose language for enterprise applications and Android development, with strong typing. JavaScript is a scripting language for web development, focusing on interactivity. Java is statically typed and object-oriented, while JavaScript is dynamically typed and prototype-based. Java runs on JVM for platform independence, while JavaScript executes in web browsers.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Opening_Lines">
+            <header>Opening Lines</header>
+            <article>
+                <p>This is a simple program that will print <i>Hello World</i></p>
+                <code>
+                    public class MyFirstJavaProgram {
+
+                        /* This is my first java program.
+                         * This will print 'Hello World' as the output
+                         */
+                     
+                        public static void main(String []args) {
+                           System.out.println("Hello World"); // prints Hello World
+                        }
+                     }
+                </code>
+                <p>To Run the program follow these steps: </p> 
+                <ul>
+                    <li>Open notepad and add the code as above.</li>
+                    <li>Save the file as: MyFirstJavaProgram.java.</li>
+                    <li>Open a command prompt window and go to the directory where you saved the class. Assume it's C:\.</li>
+                    <li>Type 'javac MyFirstJavaProgram.java' and press enter to compile your code. </li>
+                    <li>Now, type ' java MyFirstJavaProgram ' to run your program.</li>
+                    <li>You will be able to see ' Hello World ' printed on the window.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Basic_Variables">
+            <header>Basic Variables</header>
+            <article>
+                <p>In Java, variables are used to store and manipulate data during program execution. They hold values that can be of different types, such as integers, floating-point numbers, characters, booleans, or objects. Variable names must start with a letter, underscore (_), or dollar sign ($). They can include letters, digits, underscores, or dollar signs. Java is case-sensitive, so myVariable and myvariable are considered different variables.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Declaring_Variables_and_Data_Types">
+            <header>Declaring Variables and Data Types</header>
+            <article>
+                <p>There are 8 primitive variable types in java</p>
+                <ul>
+                    <p>The DataType indicates the type of data that the variable can hold. Java provides a set of built-in data types, including: <br></p>
+                    <ul>
+                        <li>int: Used for whole numbers.</li>
+                        <li>double: Used for floating-point numbers with decimal places.</li>
+                        <li>char: Used for single characters.</li>
+                        <li>boolean: Used for true/false values.</li>
+                        <li>String: Used for sequences of characters.</li>
+                        <li>Float: Used to store a decimal value to 6-7 digits of precision.</li>
+                        <li>byte: Used to store integer values from -128 to 127; smallest unit of data in Java.</li>
+                        <li>long: Used to store extremely large or small numbers </li>
+                    </ul>
+                </ul>
+                <code>
+                    int x = 4;
+                    double y = 3.0;
+                    char c = 'r'; 
+                    boolean bool = true;
+                    String str = "Hello";
+                    float fl = 3.1415926f;
+                    byte by = 100;
+                    long lo = 15000000L;
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="If_Else_statements">
+            <header>If Else statements </header>
+            <article>
+                <p>In Java, the if-else statement is used to execute different blocks of code based on a condition. It allows you to create branching logic, where different paths of execution are taken depending on the evaluation of a boolean expression. Here's the basic syntax of the if-else statement: </p>
+                <code>
+                    if (condition) {
+                        // Code block executed if the condition is true
+                    } else {
+                        // Code block executed if the condition is false
+                    }                 
+                </code>
+                <p> <b>condition</b>: A boolean expression that determines whether the code block inside the if statement should be executed or not. If the condition evaluates to true, the code block within the if statement is executed. Otherwise, if the condition evaluates to false, the code block within the else statement (if present) is executed. <br><br>
+                    <b>if block:</b> The code block that is executed if the condition is true. It is enclosed within curly braces {}. You can have multiple statements or even nested if-else statements inside the if block. <br><br>
+                    <b>else block:</b> The code block that is executed if the condition is false. It is also enclosed within curly braces {}. The else block is optional; you can omit it if you don't need to execute any code when the condition is false. <br> </p>
+            </article>
+        </section>
+        <section class="main-section" id="While_Statements">
+            <header>While Statements</header>
+            <article>
+                <p>In Java, the while statement is a control flow statement that allows you to repeatedly execute a block of code as long as a certain condition remains true. It provides a way to create loops that iterate until the condition evaluates to false. Here's the basic syntax of the while statement: </p>
+                <code>
+                    while (condition) {
+                        // Code block to be executed repeatedly
+                    }
+                </code>
+                <p>
+                    <b>condition</b>: A boolean expression that determines whether the code block should be executed or not. The condition is evaluated before each iteration of the loop. If the condition evaluates to true, the code block is executed. If it evaluates to false, the loop is terminated, and the program continues with the next statement after the while block. <br><br>
+                    <b>Code block</b>: The block of code that is executed repeatedly as long as the condition is true. It is enclosed within curly braces {}. This block typically contains the statements you want to repeat, such as computations, input/output operations, or updates to variables used in the condition.
+                </p>
+            </article>
+        </section>   
+        <section class="main-section" id="For_Statements">
+            <header>For Statements</header>
+            <article>
+                <p>In Java, the for statement is a control flow statement that allows you to iterate over a sequence of values or repeat a block of code a specified number of times. It provides a compact and structured way to perform repetitive tasks. The for statement has a flexible syntax that allows you to customize the initialization, condition, and update steps. Here's the basic syntax of the for statement: </p>
+                <code>
+                    for (initialization; condition; update) {
+                        // Code block to be executed repeatedly
+                    } 
+                </code>
+                <p> <b>Initialization</b>: The initialization step is executed only once before the loop starts. It typically initializes a loop control variable to a starting value. For example, int i = 0; initializes a loop control variable i to 0. The initialization step is optional and can be omitted if the loop control variable is already initialized.<br><br>
+                    <b>Condition</b>: The condition is a boolean expression that is evaluated before each iteration of the loop. If the condition evaluates to true, the code block is executed. If it evaluates to false, the loop is terminated, and the program continues with the next statement after the for loop. The loop will continue as long as the condition remains true. The condition is checked before each iteration, including the first iteration.<br><br>
+                    <b>Update</b>: The update step is executed at the end of each iteration, usually to update the loop control variable. It typically increments or decrements the loop control variable. For example, i++ increments i by 1 after each iteration. The update step is executed after each iteration, just before the condition is checked for the next iteration.<br><br>
+                    <b>Code block</b>: The block of code that is executed repeatedly as long as the condition is true. It is enclosed within curly braces {}. This block typically contains the statements you want to repeat, such as computations, input/output operations, or updates to variables used in the condition.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Methods">
+            <header>Methods</header>
+            <article>
+                <p>In Java, a method is a collection of statements that are grouped together to perform a specific task. Methods provide a way to organize code into reusable blocks, making programs modular and easier to maintain. A method is defined within a class and can be invoked or called from other parts of the program to execute its code. Here's an explanation of the key components and concepts related to Java methods:</p>
+                <p>A method signature consists of the method's name and the list of its parameters (if any). It uniquely identifies a method within a class.</p>
+                <code>
+                    returnType methodName(parameter1, parameter2, ...)
+                </code>
+                <p>'returnType' is the data type of the value returned by the method after execution. If the method doesn't return anything, the void keyword is used.
+                    methodName is the identifier used to refer to the method.
+                    parameter1, parameter2, ... are optional input parameters that the method may require for its operation. Parameters are enclosed in parentheses () and separated by commas ,.</p>
+                <p>'methodName' is the identifier used to refer to the method.</p>
+                <p>'parameter1, parameter2, ...' are optional input parameters that the method may require for its operation. Parameters are enclosed in parentheses () and separated by commas ,.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>All documentation was taken from <a href="https://www.w3schools.com/java/" target="_blank">w3schools</a>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

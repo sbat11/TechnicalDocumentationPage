@@ -1,0 +1,122 @@
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    line-height: 1.3;
+    min-width: 290px;
+}
+header{
+    color: aliceblue;
+    font-size: 26pt;
+}
+p{
+    color: aliceblue
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+li{
+    display: list-item;
+    text-align: match-parent;
+    color: aliceblue;
+}
+#main-doc header{
+    text-align: center;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: black;
+    opacity: 0.3;
+    margin-left: 5px;
+}
+#navbar header{
+    position: relative;
+    left: 10px;
+}
+#main-doc{
+    position: absolute;
+    margin-left: 310px;
+    padding: 30px;
+    margin-bottom: 90px;
+}
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+    #navbar {
+        background-color: black;
+        position: relative;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 270px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+    #main-doc{
+        position: relative;
+        margin-left: 0px;
+        margin-top: 200px;
+    }
+}
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+  
+#navbar li {
+    color: aliceblue;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+  
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
